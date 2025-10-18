@@ -6,7 +6,7 @@ const Register: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [role, setRole] = useState<"buyer" | "seller" | "admin">("buyer");
+  // const [role, setRole] = useState<"buyer" | "seller" | "admin">("buyer");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ const Register: React.FC = () => {
     setError("");
 
     // Giả lập đăng ký thành công
-    alert(`Đăng ký thành công cho ${role}!`);
+    alert(`Đăng ký thành công!`);
     navigate("/auth/login");
   };
 
@@ -31,7 +31,7 @@ const Register: React.FC = () => {
     <div
       className="d-flex justify-content-center align-items-center min-vh-100"
       style={{
-        backgroundImage: "url('../assets/img/food.jpg')", 
+        backgroundImage: "url('../assets/img/food.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
